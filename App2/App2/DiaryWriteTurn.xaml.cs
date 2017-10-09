@@ -42,6 +42,9 @@ namespace App2
 
             _Td.Commit();
 
+            DependencyService.Get<IHelpMsg>().Show("日記帳に残しました");
+
+
         }
 
         private void BtnWriteOnClicked(object sender, EventArgs args)

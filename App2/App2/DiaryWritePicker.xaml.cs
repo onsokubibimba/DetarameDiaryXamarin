@@ -21,7 +21,7 @@ namespace App2
         public DiaryWritePicker ()
 		{
 			InitializeComponent ();
-
+            _Ph = new PhraseList();
             WeatherListCreate();
             WhenListCreate();
             WhoListCreate();
@@ -33,7 +33,7 @@ namespace App2
 
             btnWrite.IsEnabled = false;
 
-            _Ph = new PhraseList();
+            
 
         }
 

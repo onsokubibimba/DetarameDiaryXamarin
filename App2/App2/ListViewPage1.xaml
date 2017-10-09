@@ -34,10 +34,10 @@
           <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding CreatedAt}"
-                       Style="{DynamicResource ListItemTextStyle}" />
-                            <Label Text="{Binding Weather}" 
-                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+                            <Label Text="{Binding CreatedAt}"/>
+                       <!--Style="{DynamicResource ListItemTextStyle}" -->
+                            <Label Text="{Binding Weather}" />
+                            <!--Style="{DynamicResource ListItemDetailTextStyle}"-->
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
