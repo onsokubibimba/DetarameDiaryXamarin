@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.ListViewPage1">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">0,20,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout Spacing="10"
+                 VerticalOptions="Start"
+                 Orientation="Vertical">
+
+ <!--        <Button Text="検索"
+            x:Name="BtnSearch"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="BtnOnClickedSearch" />
+       <Button Text="更新"
+            x:Name="BtnSave"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="BtnOnClickedSave" />-->
+        <ListView x:Name="lstDiary"
+                ItemsSource="{Binding DiaryItems}"
+                ItemTapped="Handle_ItemTapped"
+                CachingStrategy="RecycleElement"
+                  SeparatorVisibility="Default"
+                  Header="これまでの日記"
+                  HeightRequest="500">
+            <!--Built in Cells-->
+        <ListView.ItemTemplate>
+          <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding CreatedAt}"
+                       Style="{DynamicResource ListItemTextStyle}" />
+                            <Label Text="{Binding Weather}" 
+                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+        </ListView.ItemTemplate>
+
+            <ListView.Footer>
+                <!--<Button Text="←前の月"></Button>
+                <Button Text="次の月→"></Button>-->
+            </ListView.Footer>
+        <!--Custom View Cells-->
+        <!--
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout>
+                <Label Text="{Binding CreatedAt}"
+                       Style="{DynamicResource ListItemTextStyle}" />
+                <Label Text="{Binding Detail}" 
+                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+        -->
+      </ListView>
+    </StackLayout>
+</ContentPage>

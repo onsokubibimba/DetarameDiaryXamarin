@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.WriteTypeSelect">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="（今日の日記はどうしよう・・・？）" Margin="0,50,0,50" FontSize="Large" />
+
+            <Button Text="一気に書く" x:Name="btnWriteA" Clicked="BtnWriteAOnClicked" />
+            <Button Text="多少考えて書く" x:Name="btnWriteB" Clicked="BtnWriteBOnClicked" />
+            <Button Text="じっくり考えて書く" x:Name="btnWriteC" Clicked="BtnWriteCOnClicked" />
+
+            <!--<Button Text="考え直す" x:Name="btnWriteBack" Clicked="BtnBackOnClicked" />-->
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

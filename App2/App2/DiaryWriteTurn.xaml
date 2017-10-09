@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.DiaryWriteTurn">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label x:Name="lblWeather"/>
+                <Label x:Name="lblWhen"/>
+                <Label x:Name="lblWhere"/>
+                <Label x:Name="lblWho"/>
+                <Label x:Name="lblHow"/>
+                <Label x:Name="lblWhat"/>
+                <Label x:Name="lblDo"/>
+                <Label x:Name="lblFeeling"/>
+                <Button x:Name="btnWrite" Text="書く" Clicked="BtnWriteOnClicked" />
+                <Button x:Name="btnSave" Text="保存" Clicked="BtnSaveOnClicked" />
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

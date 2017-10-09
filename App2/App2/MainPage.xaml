@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="titlename">でたらめ日記</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout Spacing="10"
+                 VerticalOptions="Center"
+                 Orientation="Vertical">
+	<Label Text="{StaticResource titlename}" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           FontSize="Large"
+           x:Name="LblTitle"/>
+    <Button Text="日記をかく"
+            x:Name="BtnWrite"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="BtnOnClickedW" />
+     <Button Text="日記をよむ"
+            x:Name="BtnRead"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="BtnOnClickedR" />
+     <Button Text="寝る"
+            x:Name="BtnEnd"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="BtnOnClickedE" />
+     <Button Text="ヘルプ"
+            x:Name="BtnHelp"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="BtnOnClickedH" />
+    </StackLayout>
+
+</ContentPage>

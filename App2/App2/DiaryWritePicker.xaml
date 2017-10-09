@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.DiaryWritePicker">
+    <ContentPage.Content>
+        <StackLayout Padding="7">
+            <Picker x:Name="pkrWeather" Title="天気は？" VerticalOptions="Center" SelectedIndexChanged="PkrlockWeather" HeightRequest="55"/>
+            <Picker x:Name="pkrWhen" Title="いつ？" VerticalOptions="Center"  SelectedIndexChanged="PkrlockWhen" HeightRequest="55"/>
+            <Picker x:Name="pkrWhere" Title="どこ？" VerticalOptions="Center"  SelectedIndexChanged="PkrlockWeather" HeightRequest="55"/>
+            <Picker x:Name="pkrWho" Title="誰？" VerticalOptions="Center"  SelectedIndexChanged="PkrlockWho" HeightRequest="55"/>
+            <Picker x:Name="pkrHow" Title="どんな？" VerticalOptions="Center"   SelectedIndexChanged="PkrlockHow" HeightRequest="55"/>
+            <Picker x:Name="pkrWhat" Title="何？" VerticalOptions="Center"   SelectedIndexChanged="PkrlockWhat" HeightRequest="55"/>
+            <Picker x:Name="pkrDo" Title="どうした？" VerticalOptions="Center" SelectedIndexChanged="PkrlockDo" HeightRequest="55"/>
+            <Picker x:Name="pkrFeeling" Title="最終的に？" VerticalOptions="Center" SelectedIndexChanged="PkrlockFeeling" HeightRequest="55"/>
+
+            <Button x:Name="btnWrite" Text="保存" Clicked="BtnSaveOnClicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
