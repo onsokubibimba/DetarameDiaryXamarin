@@ -2,16 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.DiaryReaderPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">0,20,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>
     <ContentPage.Content>
-            <StackLayout>
-                <Label x:Name="lblWeather"/>
-                <Label x:Name="lblWhen"/>
-                <Label x:Name="lblWhere"/>
-                <Label x:Name="lblWho"/>
-                <Label x:Name="lblHow"/>
-                <Label x:Name="lblWhat"/>
-                <Label x:Name="lblDo"/>
-                <Label x:Name="lblFeeling"/>
-            </StackLayout>
+        <StackLayout>
+            <Label x:Name="lblWeather" FontSize="Large"/>
+            <Label x:Name="lblWhen" FontSize="Large"/>
+            <Label x:Name="lblWhere" FontSize="Large"/>
+            <Label x:Name="lblWho" FontSize="Large"/>
+            <Label x:Name="lblHow" FontSize="Large"/>
+            <Label x:Name="lblWhat" FontSize="Large"/>
+            <Label x:Name="lblDo" FontSize="Large"/>
+            <Label x:Name="lblFeeling" FontSize="Large"/>
+            <Image x:Name="imgMike" Source="maik.png" WidthRequest="100"  />
+            <!--<Button x:Name="btnMike"  WidthRequest="100" Clicked="ImgMaikClicked" />-->
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

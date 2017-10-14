@@ -31,6 +31,7 @@ namespace App2
             WeatherLists.Add(new DiaryItemField { ItmString = "ゲリラ豪雨", InitialIndex = 8 });
             WeatherLists.Add(new DiaryItemField { ItmString = "無し", InitialIndex = 9 });
             WeatherLists.Add(new DiaryItemField { ItmString = "晴れ時々曇り所により雨一時吹雪", InitialIndex = 10 });
+            WeatherLists.Add(new DiaryItemField { ItmString = "アツアツ", InitialIndex = 11 });
 
 
             WhenLists.Add(new DiaryItemField { ItmString = "あさ、", InitialIndex = 0 });
@@ -67,6 +68,8 @@ namespace App2
             WhoLists.Add(new DiaryItemField { ItmString = "がんめんそうはくなおにいちゃんと", InitialIndex = 18 });
             WhoLists.Add(new DiaryItemField { ItmString = "「もうだめだ」がくちぐせのおじさんと", InitialIndex = 19 });
             WhoLists.Add(new DiaryItemField { ItmString = "道具にばかり頼る愚民達と", InitialIndex = 20 });
+            WhoLists.Add(new DiaryItemField { ItmString = "テンションＭＡＸの人と", InitialIndex = 20 });
+            WhoLists.Add(new DiaryItemField { ItmString = "えずいてる犬と", InitialIndex = 20 });
 
             WhereLists.Add(new DiaryItemField { ItmString = "リビングで", InitialIndex = 0 });
             WhereLists.Add(new DiaryItemField { ItmString = "屋根裏で", InitialIndex = 1 });
@@ -93,6 +96,8 @@ namespace App2
             WhereLists.Add(new DiaryItemField { ItmString = "けいむしょで", InitialIndex = 22 });
             WhereLists.Add(new DiaryItemField { ItmString = "がっこうで", InitialIndex = 23 });
             WhereLists.Add(new DiaryItemField { ItmString = "ボブ邸で", InitialIndex = 24 });
+            WhereLists.Add(new DiaryItemField { ItmString = "デンタルクリニックで", InitialIndex = 25 });
+            WhereLists.Add(new DiaryItemField { ItmString = "一般的な場所で", InitialIndex = 26 });
 
             HowLists.Add(new DiaryItemField { ItmString = "鉄の", InitialIndex = 0 });
             HowLists.Add(new DiaryItemField { ItmString = "ぐんじょう色の", InitialIndex = 1 });
@@ -120,6 +125,17 @@ namespace App2
             HowLists.Add(new DiaryItemField { ItmString = "隙だらけの", InitialIndex = 23 });
             HowLists.Add(new DiaryItemField { ItmString = "はんぶんになった", InitialIndex = 24 });
             HowLists.Add(new DiaryItemField { ItmString = "こどもむけの", InitialIndex = 25 });
+            HowLists.Add(new DiaryItemField { ItmString = "ハチマキを巻いた", InitialIndex = 26 });
+            HowLists.Add(new DiaryItemField { ItmString = "いすの下の", InitialIndex = 26 });
+            HowLists.Add(new DiaryItemField { ItmString = "５００円ていどの", InitialIndex = 27 });
+            HowLists.Add(new DiaryItemField { ItmString = "レモンの横にある", InitialIndex = 28 });
+            HowLists.Add(new DiaryItemField { ItmString = "棚からおちた", InitialIndex = 29 });
+            HowLists.Add(new DiaryItemField { ItmString = "存在が確認されていない", InitialIndex = 30 });
+            HowLists.Add(new DiaryItemField { ItmString = "猛烈に腐敗した", InitialIndex = 31 });
+            HowLists.Add(new DiaryItemField { ItmString = "羽が生えた", InitialIndex = 32 });
+            HowLists.Add(new DiaryItemField { ItmString = "どうしようもない感じの", InitialIndex = 33 });
+
+
 
             WhatLists.Add(new DiaryItemField { ItmString = "じゃがいもを", InitialIndex = 0 });
             WhatLists.Add(new DiaryItemField { ItmString = "船を", InitialIndex = 1 });
@@ -153,6 +169,11 @@ namespace App2
             WhatLists.Add(new DiaryItemField { ItmString = "勇気を", InitialIndex = 29 });
             WhatLists.Add(new DiaryItemField { ItmString = "ふやけた肉まんを", InitialIndex = 30 });
             WhatLists.Add(new DiaryItemField { ItmString = "それを", InitialIndex = 31 });
+            WhatLists.Add(new DiaryItemField { ItmString = "ぼたもちを", InitialIndex = 32 });
+            WhatLists.Add(new DiaryItemField { ItmString = "頭痛薬を", InitialIndex = 33 });
+            WhatLists.Add(new DiaryItemField { ItmString = "カフェラテを", InitialIndex = 34 });
+
+
 
             DoLists.Add(new DiaryItemField { ItmString = "絞めました。", InitialIndex = 0 });
             DoLists.Add(new DiaryItemField { ItmString = "あぶら絵にしました", InitialIndex = 1 });
@@ -179,6 +200,11 @@ namespace App2
             DoLists.Add(new DiaryItemField { ItmString = "箱につめました。", InitialIndex = 22 });
             DoLists.Add(new DiaryItemField { ItmString = "ゆっくりねかせました。", InitialIndex = 23 });
             DoLists.Add(new DiaryItemField { ItmString = "無視しました。", InitialIndex = 24 });
+            DoLists.Add(new DiaryItemField { ItmString = "割りました。", InitialIndex = 25 });
+            DoLists.Add(new DiaryItemField { ItmString = "湯通ししました。", InitialIndex = 26 });
+            DoLists.Add(new DiaryItemField { ItmString = "崖に投げおとしました。", InitialIndex = 27 });
+            DoLists.Add(new DiaryItemField { ItmString = "タワシでこすりました。", InitialIndex = 29 });
+
 
             FeelingLists.Add(new DiaryItemField { ItmString = "じごくでした", InitialIndex = 0 });
             FeelingLists.Add(new DiaryItemField { ItmString = "さんぽういちりょうぞんでござる", InitialIndex = 1 });

@@ -99,4 +99,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Drawable\maik.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Drawable\read1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Drawable\write1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Drawable\write2.png" />
+  </ItemGroup>
 </Project>
